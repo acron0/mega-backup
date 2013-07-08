@@ -30,7 +30,6 @@ def get_dir_id(m, directory):
                 return m.find(directory)[1]['h']
         except Exception:
                 return None
-	return None
 
 def upload(m, file):
 	backup_id = get_dir_id(m, DIR)
