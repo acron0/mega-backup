@@ -26,11 +26,10 @@ def zipdir(basedir, archivename):
                 z.write(absfn, zfn)
 
 def get_dir_id(m, directory):
-	if not m.get_node_by_type(1) is None:
-		for node in m.get_node_by_type(1):
-			if isinstance(node, dict):
-				if node.has_key('a') and node['a']['n'] == directory:
-					return node['h']
+        try:
+                return m.find(directory)[1]['h']
+        except Exception:
+                return None
 	return None
 
 def upload(m, file):
