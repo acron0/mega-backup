@@ -11,3 +11,4 @@ https://github.com/richardasaurus/mega.py
 TODO
 ---
  * Add support for uploading to root directory (currently insists on being uploaded to a specified directory)
+ * Add support for specifying an upper file size and splitting the zips into parts
